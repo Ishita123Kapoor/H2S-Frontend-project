@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lightgrey;">
+    
+    <center> <strong> <h1 style="color:blue; border:black; border-width:5px; border-style:solid; background-color:white;"> WELCOME TO THE ACTION PAGE </h1> </strong> </center> 
+
+    <h2> <p> 
+    If you want to return, give any comment on the product, facing any issues etc. Please write in our comment text area. We will be happy to help you 
+    </p> </h2>
+
+
+    <h2> <center> <strong> <label for="Any Comments"> ANY COMMENTS: </label> </strong> </center> </h2>
+    <br>
+    <center> <textarea id="Any Comments" name="Any Comments" rows="4" cols="50"> </textarea> </center>
+    <br>
+    <br>
+
+
+
+    <u> <h2 style="color:purple;"> <label for="Request"> PROBLEM WITH THE ITEM </label> </h2> </u>
+
+    <form action="Submission.html"> 
+    <input type="radio" id="Request" name="Return" value="Request">
+    <label for="Request"> Delievery of order is not on time </label>
+    <br>
+    <br>
+    <input type="radio" id="Request" name="Return" value="Request">
+    <label for="Request"> Change the date of delievery </label>
+    <br>
+    <br>
+    <input type="radio" id="Request" name="Return" value="Request">
+    <label for="Request"> Defect in the item </label>
+    <br>
+    <h2> Note: Please upload the image of the defected item </h2>
+    <input type="file" name="filename" accept="image/gif, image/jpeg, image/png" id="file" onchange="loadFile(event)" style="display:filename;">
+    <label for="file" style="cursor: pointer;"> </label> </p> 
+    <p> <img id="output" width="200" /></p> <script> var loadFile = function(event) { 	var image = document.getElementById('output'); 	image.src = URL.createObjectURL(event.target.files[0]); }; </script>
+    <p> <label for="file" style="display:filename;"> </label> </p>
+    <img id="file" width="200" />	
+    <br>
+    <br>
+    <input type="radio" id="Request" name="Return" value="Request">
+    <label for="Request"> Wrong delievery </label>
+    <br>
+    <br>
+    <input type="radio" id="Request" name="Return" value="Request">
+    <label for="Request"> None </label>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+
+    <em> <h2 style="color:red;"> <p> If you click the "Submit" button, the form will be sent to an Submission page </p> </h2> </em>
+
+</body>
+</html>
